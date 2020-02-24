@@ -24,7 +24,7 @@
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.575);
-    background-image: url(/imgs/vaca.jpg);
+    background-image: url(../imgs/vaca.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     padding: 0px;
