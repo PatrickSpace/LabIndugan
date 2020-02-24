@@ -1,35 +1,37 @@
-*,body{
+*, body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-:root
-{
-     --color-1: #03BDEE;
-     --color-2: rgba(255, 255, 255, 0.75);
+
+:root {
+    --color-1: #03BDEE;
+    --color-2: rgba(255, 255, 255, 0.75);
 }
 
-.pg
-{
+.pg {
     width: 100%;
     min-height: 100vh;
     margin: 0px;
     padding: 0px;
 }
-#pg1{
+
+#pg1 {
     margin: 0px;
-    background-image: linear-gradient(to bottom, #03BDEE, rgba(255, 255, 255, 0.75) );
+    background-image: linear-gradient(to bottom, #03BDEE, rgba(255, 255, 255, 0.75));
 }
-#izq{
+
+#izq {
     width: 100%;
     min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.575);
-    background-image: url(/imgs/vaca.jpg);
+    background-image: url(../img/vaca.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     padding: 0px;
 }
-#oferta{
+
+#oferta {
     background-color: red;
     width: 100%;
     margin-top: 35vh;
@@ -41,17 +43,14 @@
     color: white;
 }
 
-#ofertalimitada
-{
-
+#ofertalimitada {
     margin: auto;
 }
 
-#enviar
-{
+#enviar {
     color: white;
     background-color: transparent;
-    border:none;
+    border: none;
     text-align: center;
     font-size: 20px;
     font-weight: 400;
@@ -65,26 +64,28 @@
     text-transform: uppercase;
 }
 
-#der{
+#der {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 0px;
     padding: 10px 5%;
 }
-#logo{
+
+#logo {
     width: 40%;
     margin: auto;
     margin-bottom: 0px;
 }
-#tlogo{
+
+#tlogo {
     font-size: 20px;
     font-family: 'Quicksand';
     text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.164);
     margin-bottom: 0px;
 }
 
-.cajablanca{
+.cajablanca {
     background-color: white;
     border-radius: 5px;
     width: 80%;
@@ -95,17 +96,48 @@
     padding: 10px;
 }
 
-#tform{
+#tform {
     text-align: left;
     padding: 20px 3px;
     font-family: 'Quicksand';
 }
-#slogan{
+
+#slogan {
     font-family: 'Roboto';
     font-weight: 300;
 }
-#testimonios{
+
+#testimonios {
     color: var(--color-1);
     font-family: 'Roboto';
     font-weight: bold;
+}
+
+@media (max-width: 960px) {
+    #oferta {
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        margin: 0px;
+        height: 10vh;
+        padding: 2vh 10%
+    }
+    #ofertalimitada {
+        display: none;
+    }
+    #oferta h4 {
+        font-size: 15px;
+    }
+    #izq {
+        min-height: 0px;
+        height: 0px;
+        width: 0px;
+        background: none;
+    }
+    #der {
+        padding-top: 11vh;
+    }
+    #logo{
+        width: 60%;
+    }
 }
